@@ -1,0 +1,200 @@
+%-------------------------
+%Based off the standard Jake's Resume template
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Alexander Edwards} \\ \vspace{1pt}
+    \small bdaace09@gmail.com $|$ 
+    \href{https://linkedin.com/in/alexcedw}{\underline{linkedin.com/in/alexcedw/}} $|$
+    \href{https://github.com/camleaf}{\underline{github.com/camleaf}}
+\end{center}
+
+
+
+%-----------SKILLS-----------
+
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Software}{: C++, Python, Java, WPILib, TypeScript, HTML/CSS, React, Git, TailwindCSS, FastAPI } \\
+     \textbf{Hardware}{: Solidworks, PrusaSlicer,  Arduino, ESP32} \\
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Co-President}{May 2025 -- Present}
+      {MechMania}{Waterloo, ON, CA}
+      \resumeItemListStart
+        \resumeItem{Lead a team of 8+ to organize, fundraise and run a robotics event for 13+ schools and 150+ students}
+        \resumeItem{Design and implement robotics challenges and examples for participants to compete in}
+        \resumeItem{Secured \$25000 in grants and sponsorships through target outreach and networking}
+        \resumeItem{Created the official website with React, Tailwindcss, and Flask}
+        \resumeItem{Handle relations with and provide technical advice to participants}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Team Member}{Aug. 2025 -- Present}
+      {2702 Rebels}{Waterloo, ON, CA}
+      \resumeItemListStart
+        \resumeItem{Contribute to a competitive First Robotics Competition team}
+        \resumeItem{Design parts and assemblies for important robot subsytems with Solidworks}
+        \resumeItem{Program control systems with Java and C++}
+        \resumeItem{Ranked 7th in Canada and 44th in the world by EPA}
+        \resumeItem{Invited to the 2026 FRC Worlds}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Substitute Lifeguard}{May. 2026 -- Present}
+      {Beechwood Parks Homes Associate}{Waterloo, ON, CA}
+      \resumeItemListStart
+        \resumeItem{Ensured a safe and fun environment for patrons}
+        \resumeItem{Implemented creative and instructional tennis lessons for children}
+        \resumeItem{Maintained up-to-date knowledge of CPR and First Aid}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Student Leader}{May. 2025 -- Present}
+      {Waterloo Collegiate Institute Robotics Club}{Waterloo, ON, CA}
+      \resumeItemListStart
+        \resumeItem{Designed and delivered robotics lessons to a club of 60+ students}
+        \resumeItem{Managed \$15000+ worth of club equipment}
+        \resumeItem{Taught safety when dealing with equipment, reducing risk and creating space for a fun learning environment.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Holo} $|$ \emph{C++, Java, Solidworks}}{May. 2026 -- Jun. 2026}
+          \resumeItemListStart
+            \resumeItem{Created a mecanum-drive robot capable of field-centric holonomic motion with an ESP32 at the core}
+            \resumeItem{Custom designed and 3D printed robot frame}
+            \resumeItem{Designed entirely in Solidworks, and prepared for printing with PrusaSlicer}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Waterloo Collegiate Institute}{Waterloo, ON, CA}
+      {}{Sept. 2023 -- Jun. 2027}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
